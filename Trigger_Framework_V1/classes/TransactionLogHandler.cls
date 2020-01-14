@@ -1,8 +1,5 @@
 /*
-    @Author : Amit Singh
-    @BuiltDate : 21st March 2018
-    @Description : This class will be called from the Trigger and then will redirect to the correct Handler
-    @Company : sfdcpanther
+ @Description : This class will be called from the Trigger and then will redirect to the correct Handler
 */
 
 public with sharing class TransactionLogHandler{
