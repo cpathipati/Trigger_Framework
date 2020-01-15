@@ -1,8 +1,5 @@
 /*
-    
-
-    @Description : This class will be called from the Trigger and then will redirect to the correct Handler
-
+ @Description : This class will be called from the Trigger and then will redirect to the correct Handler
 */
 public with sharing class TriggerDispatcher{
 
@@ -10,6 +7,7 @@ public with sharing class TriggerDispatcher{
     
        /*
         * Fetch the Trigger Settings Records and check in which context Trigger can be executed.
+        * This can be changed to Platform Cache by using Singleton Desinpattern
         */ 
         List<Trigger_Setting__c> triggerSettingList = new List<Trigger_Setting__c>();
         triggerSettingList = [Select Id, Name, Disabled__c, Object_Name__c, Before_Update__c, Before_Insert__c, Before_Delete__c,
